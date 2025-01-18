@@ -14,12 +14,17 @@
     require-prior-idle-ms = <125>;
 };
 
-&lt {
-    tapping-term-ms = <185>;
-};
-
 / {
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        alt_f4 {
+            bindings = <&kp LA(F4)>;
+            key-positions = <0 9>;
+            timeout-ms = <50>;
+            layers = <0>;
+        };
+    };
 
     macros {
         to_layer_0: to_layer_0 {
