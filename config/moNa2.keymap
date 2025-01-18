@@ -27,7 +27,7 @@
             bindings = <&kp LA(F4)>;
             key-positions = <0 9>;
             timeout-ms = <50>;
-            layers = <0>;
+            layers = <3>;
         };
     };
 
@@ -35,8 +35,80 @@
         to_layer_0: to_layer_0 {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
-            bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
+            bindings = <&to 3 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
+        };
+
+        home_mac: home_mac {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT &kp LEFT_ARROW>,
+                <&macro_press>;
+
+            label = "HOME_MAC";
+        };
+
+        end_mac: end_mac {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT &kp RIGHT_ARROW>,
+                <&macro_press>;
+
+            label = "END_MAC";
+        };
+
+        pageup_mac: pageup_mac {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT &kp UP_ARROW>,
+                <&macro_press>;
+
+            label = "PAGEUP_MAC";
+        };
+
+        pagedown_mac: pagedown_mac {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT &kp DOWN_ARROW>,
+                <&macro_press>;
+
+            label = "PAGEDOWN_MAC";
+        };
+
+        Bluetooth0: Bluetooth0 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 0 &to 0>, <&macro_press>;
+
+            label = "BLUETOOTH0";
+        };
+
+        Bluetooth1: Bluetooth1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 1 &to 3>, <&macro_press>;
+
+            label = "BLUETOOTH1";
+        };
+
+        Bluetooth2: Bluetooth2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 2 &to 3>, <&macro_press>;
+
+            label = "BLUETOOTH2";
+        };
+
+        Bluetooth3: Bluetooth3 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 2 &to 3>, <&macro_press>;
+
+            label = "BLUETOOTH3";
         };
     };
 
@@ -62,12 +134,12 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        Mac0 {
             bindings = <
-&kp Q             &kp W               &kp E           &kp R        &kp T                                                        &kp Y        &kp U                &kp I            &kp O    &kp P
-&mt LEFT_SHIFT A  &kp S               &mt LEFT_ALT D  &mt LCTRL F  &kp G                 &trans                &kp MINUS        &kp H        &mt RIGHT_CONTROL J  &mt RIGHT_ALT K  &kp L    &mt RIGHT_SHIFT SEMICOLON
-&kp Z             &kp X               &kp C           &kp V        &kp B                 &lt 3 SINGLE_QUOTE    &kp EQUAL        &kp N        &kp M                &kp COMMA        &kp DOT  &kp SLASH
-&mkp MB1          &kp LC(LA(DELETE))  &kp LEFT_WIN    &mo 1        &mt LEFT_SHIFT SPACE  &kp TAB               &lt 2 BACKSPACE  &lt 1 ENTER                                                 &mkp MB1
+&kp Q             &kp W             &kp E               &kp R               &kp T                                                        &kp Y        &kp U                &kp I                &kp O    &kp P
+&mt LEFT_SHIFT A  &kp S             &mt LEFT_COMMAND D  &mt LEFT_COMMAND F  &kp G                 &trans                &kp MINUS        &kp H        &mt RIGHT_COMMAND J  &mt RIGHT_COMMAND K  &kp L    &mt RIGHT_SHIFT SEMICOLON
+&kp Z             &kp X             &kp C               &kp V               &kp B                 &lt 6 SINGLE_QUOTE    &kp EQUAL        &kp N        &kp M                &kp COMMA            &kp DOT  &kp SLASH
+&mkp MB1          &kp LEFT_CONTROL  &kp LEFT_ALT        &mo 1               &mt LEFT_SHIFT SPACE  &kp TAB               &lt 2 BACKSPACE  &lt 1 ENTER                                                     &mkp MB1
             >;
 
             sensor-bindings =
@@ -75,18 +147,18 @@
                 <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
 
-        layer_1 {
+        Mac1 {
             bindings = <
-&kp F9    &kp F10  &kp F11  &kp F12  &trans                    &kp LC(LS(TAB))  &kp HOME        &kp UP_ARROW    &kp END          &kp LC(TAB)
+&kp F9    &kp F10  &kp F11  &kp F12  &trans                    &kp LC(LS(TAB))  &home_mac       &kp UP_ARROW    &end_mac         &kp LC(TAB)
 &kp F5    &kp F6   &kp F7   &kp F8   &trans  &trans    &trans  &kp BACKSPACE    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp DELETE
-&kp F1    &kp F2   &kp F3   &kp F4   &trans  &trans    &kp F7  &kp F10          &kp PAGE_UP     &kp F2          &kp PAGE_DOWN    &kp ESCAPE
+&kp F1    &kp F2   &kp F3   &kp F4   &trans  &trans    &kp F7  &kp F10          &pageup_mac     &kp F2          &pagedown_mac    &kp ESCAPE
 &mkp MB2  &trans   &trans   &trans   &trans  &trans    &trans  &trans                                                            &mkp MB2
             >;
 
             sensor-bindings = <&inc_dec_kp LC(MINUS) LC(PLUS)>;
         };
 
-        layer_2 {
+        Mac2 {
             bindings = <
 &kp EXCLAMATION  &kp AT_SIGN      &kp HASH         &kp DOLLAR       &kp PERCENT                        &kp CARET        &kp AMPERSAND     &kp ASTRK          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
 &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &trans    &trans  &kp KP_NUMBER_6  &kp KP_NUMBER_7   &kp KP_NUMBER_8    &kp KP_NUMBER_9       &kp KP_NUMBER_0
@@ -97,12 +169,47 @@
             sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
         };
 
-        layer_4 {
+        Windows0 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                         &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3
-&trans  &trans  &trans  &trans  &trans  &trans    &trans       &trans  &trans        &trans        &trans        &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &bootloader  &trans  &trans        &trans        &trans        &bt BT_CLR
-&trans  &trans  &trans  &trans  &trans  &trans    &trans       &trans                                            &bt BT_CLR_ALL
+&kp Q             &kp W               &kp E           &kp R        &kp T                                                        &kp Y        &kp U                &kp I            &kp O    &kp P
+&mt LEFT_SHIFT A  &kp S               &mt LEFT_ALT D  &mt LCTRL F  &kp G                 &trans                &kp MINUS        &kp H        &mt RIGHT_CONTROL J  &mt RIGHT_ALT K  &kp L    &mt RIGHT_SHIFT SEMICOLON
+&kp Z             &kp X               &kp C           &kp V        &kp B                 &lt 6 SINGLE_QUOTE    &kp EQUAL        &kp N        &kp M                &kp COMMA        &kp DOT  &kp SLASH
+&mkp MB1          &kp LC(LA(DELETE))  &kp LEFT_WIN    &mo 4        &mt LEFT_SHIFT SPACE  &kp TAB               &lt 5 BACKSPACE  &lt 4 ENTER                                                 &mkp MB1
+            >;
+
+            sensor-bindings =
+                <&scroll_up_down>,
+                <&inc_dec_kp C_VOL_DN C_VOL_UP>;
+        };
+
+        Windows1 {
+            bindings = <
+&kp F9    &kp F10  &kp F11  &kp F12  &trans                    &kp LC(LS(TAB))  &kp HOME        &kp UP_ARROW    &kp END          &kp LC(TAB)
+&kp F5    &kp F6   &kp F7   &kp F8   &trans  &trans    &trans  &kp BACKSPACE    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp DELETE
+&kp F1    &kp F2   &kp F3   &kp F4   &trans  &trans    &kp F7  &kp F10          &kp PAGE_UP     &kp F2          &kp PAGE_DOWN    &kp ESCAPE
+&mkp MB2  &trans   &trans   &trans   &trans  &trans    &trans  &trans                                                            &mkp MB2
+            >;
+
+            sensor-bindings = <&inc_dec_kp LC(MINUS) LC(PLUS)>;
+        };
+
+        Windows2 {
+            bindings = <
+&kp EXCLAMATION  &kp AT_SIGN      &kp HASH         &kp DOLLAR       &kp PERCENT                        &kp CARET        &kp AMPERSAND     &kp ASTRK          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &trans    &trans  &kp KP_NUMBER_6  &kp KP_NUMBER_7   &kp KP_NUMBER_8    &kp KP_NUMBER_9       &kp KP_NUMBER_0
+&trans           &trans           &trans           &trans           &trans           &trans    &trans  &trans           &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH         &kp GRAVE
+&trans           &trans           &trans           &trans           &trans           &trans    &trans  &trans                                                                      &trans
+            >;
+
+            sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
+        };
+
+        Bluetooth {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                         &trans  &Bluetooth0  &Bluetooth1  &Bluetooth2  &Bluetooth3
+&trans  &trans  &trans  &trans  &trans  &trans    &trans       &trans  &trans       &trans       &trans       &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &bootloader  &trans  &trans       &trans       &trans       &bt BT_CLR
+&trans  &trans  &trans  &trans  &trans  &trans    &trans       &trans                                         &bt BT_CLR_ALL
             >;
 
             sensor-bindings = <&scroll_up_down>;
