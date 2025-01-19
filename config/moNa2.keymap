@@ -115,7 +115,7 @@
 &mkp MB2  &trans   &trans   &trans   &trans  &trans    &trans  &trans                                                                    &mkp MB2
             >;
 
-            sensor-bindings = <&inc_dec_kp LC(MINUS) LC(PLUS)>;
+            sensor-bindings = <&inc_dec_kp LG(MINUS) LG(EQUAL)>;
         };
 
         Mac2 {
