@@ -153,10 +153,10 @@
 
         Mac1 {
             bindings = <
-&kp F9    &kp F10  &kp F11  &kp F12  &trans                       &kp LC(LS(TAB))  &home_mac       &kp UP_ARROW    &end_mac         &kp LC(TAB)
-&kp F5    &kp F6   &kp F7   &kp F8   &trans  &trans    &kp GLOBE  &kp BACKSPACE    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp DELETE
-&kp F1    &kp F2   &kp F3   &kp F4   &trans  &trans    &kp F7     &kp F10          &pageup_mac     &kp F2          &pagedown_mac    &kp ESCAPE
-&mkp MB2  &trans   &trans   &trans   &trans  &trans    &trans     &trans                                                            &mkp MB2
+&kp F9    &kp F10  &kp F11  &kp F12  &trans                       &kp LC(LS(TAB))  &home_mac    &kp UP    &end_mac       &kp LC(TAB)
+&kp F5    &kp F6   &kp F7   &kp F8   &trans  &trans    &kp GLOBE  &kp BACKSPACE    &kp LEFT     &kp DOWN  &kp RIGHT      &kp DELETE
+&kp F1    &kp F2   &kp F3   &kp F4   &trans  &trans    &kp F7     &kp F10          &pageup_mac  &kp F2    &pagedown_mac  &kp ESCAPE
+&mkp MB2  &trans   &trans   &trans   &trans  &trans    &trans     &trans                                                 &mkp MB2
             >;
 
             sensor-bindings = <&inc_dec_kp LC(MINUS) LC(PLUS)>;
