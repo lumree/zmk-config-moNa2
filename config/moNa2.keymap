@@ -65,7 +65,13 @@
         pageup_mac: pageup_mac {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp GLOBE &kp UP_ARROW>, <&macro_press>;
+            bindings =
+                <&macro_press>,
+                <&kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT>,
+                <&macro_tap>,
+                <&kp UP_ARROW>,
+                <&macro_release>,
+                <&kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT>;
 
             label = "PAGEUP_MAC";
         };
