@@ -45,6 +45,7 @@
             bindings = <&kp GLOBE &kp LEFT_ARROW>, <&macro_press>;
 
             label = "HOME_MAC";
+            wait-ms = <10>;
         };
 
         end_mac: end_mac {
@@ -154,7 +155,7 @@
             bindings = <
 &kp EXCLAMATION  &kp AT_SIGN      &kp HASH         &kp DOLLAR       &kp PERCENT                                   &kp CARET        &kp AMPERSAND     &kp ASTRK          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
 &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &trans    &trans             &kp KP_NUMBER_6  &kp KP_NUMBER_7   &kp KP_NUMBER_8    &kp KP_NUMBER_9       &kp KP_NUMBER_0
-&trans           &trans           &trans           &kp NUMBER_4     &trans           &trans    &kp RIGHT_COMMAND  &trans           &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH         &kp GRAVE
+&trans           &trans           &trans           &kp NUMBER_4     &kp NUMBER_5     &trans    &kp RIGHT_COMMAND  &trans           &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH         &kp GRAVE
 &trans           &trans           &trans           &trans           &trans           &trans    &trans             &trans                                                                      &trans
             >;
 
