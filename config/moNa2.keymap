@@ -44,11 +44,11 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp GLOBE>,
+                <&kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT>,
                 <&macro_tap>,
-                <&kp LEFT_ARROW>,
+                <&mt LEFT_ARROW LEFT_ARROW>,
                 <&macro_release>,
-                <&kp GLOBE>;
+                <&kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT>;
 
             label = "HOME_MAC";
             wait-ms = <10>;
