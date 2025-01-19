@@ -42,7 +42,11 @@
         home_mac: home_mac {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp GLOBE>, <&macro_wait_time 1>, <&kp LEFT_ARROW>;
+            bindings =
+                <&kp GLOBE>,
+                <&macro_press>,
+                <&kp LEFT_ARROW>,
+                <&macro_release>;
 
             label = "HOME_MAC";
             wait-ms = <10>;
