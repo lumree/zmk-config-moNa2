@@ -39,50 +39,6 @@
             label = "TO_LAYER_0";
         };
 
-        home_mac: home_mac {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT>,
-                <&macro_tap>,
-                <&mt LEFT_ARROW LEFT_ARROW>,
-                <&macro_release>,
-                <&kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT>;
-
-            label = "HOME_MAC";
-            wait-ms = <0>;
-            tap-ms = <0>;
-        };
-
-        end_mac: end_mac {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp GLOBE &kp RIGHT_ARROW>;
-            label = "END_MAC";
-        };
-
-        pageup_mac: pageup_mac {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT>,
-                <&macro_tap>,
-                <&kp UP_ARROW>,
-                <&macro_release>,
-                <&kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT>;
-
-            label = "PAGEUP_MAC";
-        };
-
-        pagedown_mac: pagedown_mac {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp GLOBE &kp DOWN_ARROW>;
-            label = "PAGEDOWN_MAC";
-        };
-
         Bluetooth0: Bluetooth0 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -153,10 +109,10 @@
 
         Mac1 {
             bindings = <
-&kp F9    &kp F10  &kp F11  &kp F12  &trans                       &kp LC(LS(TAB))  &home_mac    &kp UP    &end_mac       &kp LC(TAB)
-&kp F5    &kp F6   &kp F7   &kp F8   &trans  &trans    &kp GLOBE  &kp BACKSPACE    &kp LEFT     &kp DOWN  &kp RIGHT      &kp DELETE
-&kp F1    &kp F2   &kp F3   &kp F4   &trans  &trans    &kp F7     &kp F10          &pageup_mac  &kp F2    &pagedown_mac  &kp ESCAPE
-&mkp MB2  &trans   &trans   &trans   &trans  &trans    &trans     &trans                                                 &mkp MB2
+&kp F8    &kp F9  &kp F10  &kp F11           &kp F12                    &kp LC(LS(TAB))  &trans    &kp UP    &trans     &kp LC(TAB)
+&kp F5    &kp F6  &kp F7   &kp LEFT_COMMAND  &trans   &trans    &trans  &kp BACKSPACE    &kp LEFT  &kp DOWN  &kp RIGHT  &kp DELETE
+&kp F1    &kp F2  &kp F3   &kp F4            &trans   &trans    &kp F7  &kp F10          &trans    &kp F2    &trans     &kp ESCAPE
+&mkp MB2  &trans  &trans   &trans            &trans   &trans    &trans  &trans                                          &mkp MB2
             >;
 
             sensor-bindings = <&inc_dec_kp LC(MINUS) LC(PLUS)>;
