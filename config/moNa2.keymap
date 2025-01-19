@@ -42,9 +42,7 @@
         home_mac: home_mac {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =
-                <&kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT &kp LEFT_ARROW>,
-                <&macro_press>;
+            bindings = <&kp GLOBE &kp LEFT_ARROW>, <&macro_press>;
 
             label = "HOME_MAC";
         };
@@ -52,9 +50,7 @@
         end_mac: end_mac {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =
-                <&kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT &kp RIGHT_ARROW>,
-                <&macro_press>;
+            bindings = <&kp GLOBE &kp RIGHT_ARROW>, <&macro_press>;
 
             label = "END_MAC";
         };
@@ -62,9 +58,7 @@
         pageup_mac: pageup_mac {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =
-                <&kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT &kp UP_ARROW>,
-                <&macro_press>;
+            bindings = <&kp GLOBE &kp UP_ARROW>, <&macro_press>;
 
             label = "PAGEUP_MAC";
         };
@@ -72,9 +66,7 @@
         pagedown_mac: pagedown_mac {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =
-                <&kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT &kp DOWN_ARROW>,
-                <&macro_press>;
+            bindings = <&kp GLOBE &kp DOWN_ARROW>, <&macro_press>;
 
             label = "PAGEDOWN_MAC";
         };
