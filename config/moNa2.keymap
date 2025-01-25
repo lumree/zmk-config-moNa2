@@ -109,9 +109,9 @@
 
         Mac1 {
             bindings = <
-&kp LEFT_GUI    &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans                    &kp LC(LS(TAB))  &kp LG(LEFT_ARROW)  &kp UP_ARROW    &kp LG(RIGHT_ARROW)  &kp LC(TAB)
+&kp NUMBER_0    &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans                    &kp LC(LS(TAB))  &kp LG(LEFT_ARROW)  &kp UP_ARROW    &kp LG(RIGHT_ARROW)  &kp LC(TAB)
 &kp LEFT_SHIFT  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans  &trans    &trans  &kp BACKSPACE    &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW      &kp DELETE
-&kp NUMBER_0    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans    &kp F7  &kp F10          &kp LG(UP_ARROW)    &kp F2          &kp LG(DOWN_ARROW)   &kp ESCAPE
+&kp LEFT_GUI    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans    &kp F7  &kp F10          &kp LG(UP_ARROW)    &kp F2          &kp LG(DOWN_ARROW)   &kp ESCAPE
 &trans          &trans        &trans        &mkp MB2      &trans  &trans    &trans  &trans                                                                    &mkp MB2
             >;
 
@@ -144,9 +144,9 @@
 
         Windows1 {
             bindings = <
-&kp LCTRL       &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans                    &kp LC(LS(TAB))  &kp HOME        &kp UP_ARROW    &kp END          &kp LC(TAB)
+&kp NUMBER_0    &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans                    &kp LC(LS(TAB))  &kp HOME        &kp UP_ARROW    &kp END          &kp LC(TAB)
 &kp LEFT_SHIFT  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans  &trans    &trans  &kp BACKSPACE    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp DELETE
-&kp NUMBER_0    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans    &kp F7  &kp F10          &kp PAGE_UP     &kp F2          &kp PAGE_DOWN    &kp ESCAPE
+&kp LCTRL       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans    &kp F7  &kp F10          &kp PAGE_UP     &kp F2          &kp PAGE_DOWN    &kp ESCAPE
 &trans          &trans        &trans        &mkp MB2      &trans  &trans    &trans  &trans                                                            &mkp MB2
             >;
 
