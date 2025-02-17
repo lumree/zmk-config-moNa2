@@ -117,9 +117,9 @@
 
         Mac1 {
             bindings = <
-&kp NUMBER_4    &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_0  &trans                    &kp LC(LS(TAB))  &kp LG(LEFT_ARROW)  &kp UP_ARROW    &kp LG(RIGHT_ARROW)  &kp LC(TAB)
-&kp NUMBER_1    &kp NUMBER_2  &kp NUMBER_3  &kp LEFT_GUI  &trans  &trans    &trans  &kp BACKSPACE    &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW      &kp DELETE
-&kp NUMBER_7    &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &trans  &trans    &kp F7  &kp F10          &kp LG(UP_ARROW)    &kp F2          &kp LG(DOWN_ARROW)   &kp ESCAPE
+&kp NUMBER_7    &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &trans                    &kp LC(LS(TAB))  &kp LG(LEFT_ARROW)  &kp UP_ARROW    &kp LG(RIGHT_ARROW)  &kp LC(TAB)
+&kp NUMBER_4    &kp NUMBER_5  &kp NUMBER_6  &kp LEFT_GUI  &trans  &trans    &trans  &kp BACKSPACE    &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW      &kp DELETE
+&kp NUMBER_1    &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_0  &trans  &trans    &kp F7  &kp F10          &kp LG(UP_ARROW)    &kp F2          &kp LG(DOWN_ARROW)   &kp ESCAPE
 &kp LEFT_SHIFT  &trans        &trans        &mkp MB2      &trans  &trans    &trans  &trans                                                                    &mkp MB2
             >;
 
