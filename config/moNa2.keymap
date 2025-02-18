@@ -10,7 +10,7 @@
 &mt {
     flavor = "balanced";
     quick-tap-ms = <200>;
-    tapping-term-ms = <185>;
+    tapping-term-ms = <180>;
     require-prior-idle-ms = <150>;
 };
 
@@ -104,10 +104,10 @@
 
         Mac0 {
             bindings = <
-&mt LEFT_CONTROL Q  &kp W          &kp E               &kp R               &kp T                                                        &kp Y        &kp U                &kp I                &kp O    &kp P
-&mt LEFT_SHIFT A    &kp S          &mt LEFT_COMMAND D  &mt LEFT_COMMAND F  &kp G                 &trans                &kp MINUS        &kp H        &mt RIGHT_COMMAND J  &mt RIGHT_COMMAND K  &kp L    &mt RIGHT_SHIFT SEMICOLON
-&kp Z               &kp X          &kp C               &kp V               &kp B                 &lt 6 SINGLE_QUOTE    &kp EQUAL        &kp N        &kp M                &kp COMMA            &kp DOT  &kp SLASH
-&kp LEFT_ALT        &kp LC(LG(Q))  &kp LEFT_ALT        &mkp MB1            &mt LEFT_SHIFT SPACE  &lt 1 TAB             &lt 2 BACKSPACE  &lt 1 ENTER                                                     &mkp MB1
+&mt LEFT_CONTROL Q  &kp W          &kp E               &kp R               &kp T                                                        &kp Y        &kp U                &kp I      &kp O    &kp P
+&mt LEFT_SHIFT A    &kp S          &mt LEFT_COMMAND D  &mt LEFT_COMMAND F  &kp G                 &trans                &kp MINUS        &kp H        &mt RIGHT_COMMAND J  &kp K      &kp L    &mt RIGHT_SHIFT SEMICOLON
+&kp Z               &kp X          &kp C               &kp V               &kp B                 &lt 6 SINGLE_QUOTE    &kp EQUAL        &kp N        &kp M                &kp COMMA  &kp DOT  &kp SLASH
+&kp LEFT_ALT        &kp LC(LG(Q))  &kp LEFT_ALT        &mkp MB1            &mt LEFT_SHIFT SPACE  &lt 1 TAB             &lt 2 BACKSPACE  &lt 1 ENTER                                           &mkp MB1
             >;
 
             sensor-bindings =
@@ -139,10 +139,10 @@
 
         Windows0 {
             bindings = <
-&kp Q             &kp W               &kp E           &kp R        &kp T                                                        &kp Y        &kp U                &kp I            &kp O    &kp P
-&mt LEFT_SHIFT A  &kp S               &mt LEFT_ALT D  &mt LCTRL F  &kp G                 &trans                &kp MINUS        &kp H        &mt RIGHT_CONTROL J  &mt RIGHT_ALT K  &kp L    &mt RIGHT_SHIFT SEMICOLON
-&kp Z             &kp X               &kp C           &kp V        &kp B                 &lt 6 SINGLE_QUOTE    &kp EQUAL        &kp N        &kp M                &kp COMMA        &kp DOT  &kp SLASH
-&kp LEFT_GUI      &kp LC(LA(DELETE))  &kp LEFT_GUI    &mkp MB1     &mt LEFT_SHIFT SPACE  &lt 4 TAB             &lt 5 BACKSPACE  &lt 4 ENTER                                                 &mkp MB1
+&kp Q             &kp W               &kp E           &kp R        &kp T                                                        &kp Y        &kp U                &kp I      &kp O    &kp P
+&mt LEFT_SHIFT A  &kp S               &mt LEFT_ALT D  &mt LCTRL F  &kp G                 &trans                &kp MINUS        &kp H        &mt RIGHT_CONTROL J  &kp K      &kp L    &mt RIGHT_SHIFT SEMICOLON
+&kp Z             &kp X               &kp C           &kp V        &kp B                 &lt 6 SINGLE_QUOTE    &kp EQUAL        &kp N        &kp M                &kp COMMA  &kp DOT  &kp SLASH
+&kp LEFT_GUI      &kp LC(LA(DELETE))  &kp LEFT_GUI    &mkp MB1     &mt LEFT_SHIFT SPACE  &lt 4 TAB             &lt 5 BACKSPACE  &lt 4 ENTER                                           &mkp MB1
             >;
 
             sensor-bindings =
