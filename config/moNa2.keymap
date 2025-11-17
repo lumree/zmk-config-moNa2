@@ -23,7 +23,7 @@
         compatible = "zmk,combos";
 
         alt_f4 {
-            bindings = <&kp LA(F4)>;
+            bindings = <&kp RA(F4)>;
             key-positions = <0 9>;
             timeout-ms = <100>;
             layers = <4>;
