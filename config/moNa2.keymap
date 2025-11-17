@@ -25,7 +25,7 @@
         alt_f4 {
             bindings = <&kp RA(F4)>;
             key-positions = <0 9>;
-            timeout-ms = <100>;
+            timeout-ms = <201>;
             layers = <4>;
         };
     };
@@ -103,10 +103,10 @@
 
         Mac0 {
             bindings = <
-&mt LEFT_CONTROL Q  &kp W          &kp E               &kp R               &kp T                                                        &kp Y        &kp U                &kp I      &kp O    &kp P
-&mt LEFT_SHIFT A    &kp S          &mt LEFT_COMMAND D  &mt LEFT_COMMAND F  &kp G                 &trans                &kp MINUS        &kp H        &mt RIGHT_COMMAND J  &kp K      &kp L    &mt RIGHT_SHIFT SEMICOLON
-&kp Z               &kp X          &kp C               &kp V               &kp B                 &lt 8 SINGLE_QUOTE    &kp EQUAL        &kp N        &kp M                &kp COMMA  &kp DOT  &kp SLASH
-&mo 3               &kp LC(LG(Q))  &kp LEFT_ALT        &mkp MB1            &mt LEFT_SHIFT SPACE  &lt 1 TAB             &lt 2 BACKSPACE  &lt 1 ENTER                                           &mkp MB1
+&mt LEFT_CONTROL Q  &kp W             &kp E         &kp R               &kp T                                                        &kp Y        &kp U                &kp I      &kp O    &kp P
+&mt LEFT_SHIFT A    &kp S             &kp D         &mt LEFT_COMMAND F  &kp G                 &trans                &kp MINUS        &kp H        &mt RIGHT_COMMAND J  &kp K      &kp L    &mt RIGHT_SHIFT SEMICOLON
+&kp Z               &kp X             &kp C         &kp V               &kp B                 &lt 8 SINGLE_QUOTE    &kp EQUAL        &kp N        &kp M                &kp COMMA  &kp DOT  &kp SLASH
+&mo 3               &kp LEFT_COMMAND  &kp LEFT_ALT  &mkp MB1            &mt LEFT_SHIFT SPACE  &lt 1 TAB             &lt 2 BACKSPACE  &lt 1 ENTER                                           &mkp MB1
             >;
 
             sensor-bindings =
