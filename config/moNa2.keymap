@@ -28,6 +28,12 @@
             timeout-ms = <100>;
             layers = <4>;
         };
+
+        alt_F4 {
+            bindings = <&alt_F4>;
+            key-positions = <1 8>;
+            timeout-ms = <50>;
+        };
     };
 
     macros {
@@ -76,6 +82,14 @@
             bindings = <&bt BT_SEL 4 &to 0>, <&macro_press>;
 
             label = "BLUETOOTH4";
+        };
+
+        alt_F4: alt_F4 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_ALT &kp F4>, <&macro_press>;
+
+            label = "ALT_F4";
         };
     };
 
