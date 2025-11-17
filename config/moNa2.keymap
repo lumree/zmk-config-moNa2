@@ -88,8 +88,7 @@
         alt_F4: alt_F4 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_ALT &kp F4>, <&macro_tap>;
-
+            bindings = <&kp LEFT_ALT &kp F4>;
             label = "ALT_F4";
         };
     };
