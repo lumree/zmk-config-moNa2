@@ -29,7 +29,7 @@
             layers = <4>;
         };
 
-        alt_F4 {
+        alt_F4_bk {
             bindings = <&alt_F4>;
             key-positions = <1 8>;
             timeout-ms = <50>;
