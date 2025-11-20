@@ -104,7 +104,7 @@
         Mac0 {
             bindings = <
 &mt LEFT_CONTROL Q  &kp W             &kp E         &kp R               &kp T                                                        &kp Y        &kp U                &kp I      &kp O    &kp P
-&mt LEFT_SHIFT A    &kp S             &kp D         &mt LEFT_COMMAND F  &kp G                 &trans                &kp MINUS        &kp H        &mt RIGHT_COMMAND J  &kp K      &kp L    &mt RIGHT_SHIFT SEMICOLON
+&mt LEFT_SHIFT A    &kp S             &kp LG(D)     &mt LEFT_COMMAND F  &kp G                 &trans                &kp MINUS        &kp H        &mt RIGHT_COMMAND J  &kp K      &kp L    &mt RIGHT_SHIFT SEMICOLON
 &kp Z               &kp X             &kp C         &kp V               &kp B                 &lt 8 SINGLE_QUOTE    &kp EQUAL        &kp N        &kp M                &kp COMMA  &kp DOT  &kp SLASH
 &mo 3               &kp LEFT_COMMAND  &kp LEFT_ALT  &mkp MB1            &mt LEFT_SHIFT SPACE  &lt 1 TAB             &lt 2 BACKSPACE  &lt 1 ENTER                                           &mkp MB1
             >;
@@ -138,17 +138,17 @@
 
         Mac3 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                    &trans        &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans        &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp RIGHT_COMMAND
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                                                  &trans
+&trans  &trans  &trans  &trans  &trans                            &trans              &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans          &trans              &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp RIGHT_COMMAND
+&trans  &trans  &trans  &trans  &trans  &trans    &trans          &kp NUMBER_0        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp LANGUAGE_2  &kp LG(LANGUAGE_1)                                            &trans
             >;
         };
 
         Windows0 {
             bindings = <
 &kp Q             &kp W         &kp E         &kp R        &kp T                                                        &kp Y        &kp U                &kp I      &kp O    &kp P
-&mt LEFT_SHIFT A  &kp S         &kp D         &mt LCTRL F  &kp G                 &trans                &kp MINUS        &kp H        &mt RIGHT_CONTROL J  &kp K      &kp L    &mt RIGHT_SHIFT SEMICOLON
+&mt LEFT_SHIFT A  &kp S         &kp LA(D)     &mt LCTRL F  &kp G                 &trans                &kp MINUS        &kp H        &mt RIGHT_CONTROL J  &kp LA(K)  &kp L    &mt RIGHT_SHIFT SEMICOLON
 &kp Z             &kp X         &kp C         &kp V        &kp B                 &lt 8 SINGLE_QUOTE    &kp EQUAL        &kp N        &kp M                &kp COMMA  &kp DOT  &kp SLASH
 &mo 7             &kp LEFT_ALT  &kp LEFT_GUI  &mkp MB1     &mt LEFT_SHIFT SPACE  &lt 5 TAB             &lt 6 BACKSPACE  &lt 5 ENTER                                           &mkp MB1
             >;
@@ -182,10 +182,10 @@
 
         Windows3 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                    &trans        &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans        &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp RCTRL
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                                                  &trans
+&trans  &trans  &trans  &trans  &trans                     &trans        &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans   &trans        &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp RCTRL
+&trans  &trans  &trans  &trans  &trans  &trans    &trans   &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp F16  &kp F15                                                 &trans
             >;
         };
 
