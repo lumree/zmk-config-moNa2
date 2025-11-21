@@ -147,7 +147,7 @@
 
         iPad0 {
             bindings = <
-&mt LEFT_CONTROL Q  &kp W      &kp E           &kp R        &kp T                                                         &kp Y        &kp U                &kp I      &kp O    &kp P
+&mt LEFT_COMMAND Q  &kp W      &kp E           &kp R        &kp T                                                         &kp Y        &kp U                &kp I      &kp O    &kp P
 &mt LEFT_SHIFT A    &kp S      &mt LEFT_GUI D  &mt LCTRL F  &kp G                 &trans                 &kp MINUS        &kp H        &mt RIGHT_COMMAND J  &kp K      &kp L    &mt RIGHT_SHIFT SEMICOLON
 &kp Z               &kp X      &kp C           &kp V        &kp B                 &lt 12 SINGLE_QUOTE    &kp EQUAL        &kp N        &kp M                &kp COMMA  &kp DOT  &kp SLASH
 &mo 7               &kp GLOBE  &kp LEFT_ALT    &mkp MB1     &mt LEFT_SHIFT SPACE  &lt 5 TAB              &lt 6 BACKSPACE  &lt 5 ENTER                                           &mkp MB1
@@ -235,7 +235,7 @@
 
         Bluetooth {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                         &trans  &trans       &trans       &trans       &bluetooth4
+&trans  &trans  &trans  &trans  &trans                         &trans  &trans       &trans       &trans       &Bluetooth4
 &trans  &trans  &trans  &trans  &trans  &trans    &trans       &trans  &Bluetooth0  &Bluetooth1  &Bluetooth2  &Bluetooth3
 &trans  &trans  &trans  &trans  &trans  &trans    &bootloader  &trans  &trans       &trans       &trans       &bt BT_CLR
 &trans  &trans  &trans  &trans  &trans  &trans    &trans       &trans                                         &bt BT_CLR_ALL
