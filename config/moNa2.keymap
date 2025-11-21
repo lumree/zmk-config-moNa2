@@ -62,7 +62,7 @@
             label = "BLUETOOTH2";
         };
 
-        Bluetooth3_kari: new_macro {
+        Bluetooth3_kari: Bluetooth3_kari {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&bt BT_SEL 3 &to 8>, <&macro_press>;
@@ -70,7 +70,7 @@
             label = "NEW_MACRO";
         };
 
-        Bluetooth4_kari: new_macro {
+        Bluetooth4_kari: Bluetooth4_kari {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&bt BT_SEL 4 &to 8>, <&macro_press>;
