@@ -103,7 +103,7 @@
             #binding-cells = <0>;
             bindings = <&kp LANGUAGE_1>, <&kp LANGUAGE_2>;
 
-            tapping-term-ms = <180>;
+            tapping-term-ms = <210>;
         };
 
         tap_dance_win: tap_dance_win {
@@ -112,7 +112,7 @@
             #binding-cells = <0>;
             bindings = <&kp F15>, <&kp F16>;
 
-            tapping-term-ms = <180>;
+            tapping-term-ms = <210>;
         };
     };
 
