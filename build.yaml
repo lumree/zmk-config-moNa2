@@ -20,7 +20,10 @@
 include:
   - board: xiao_ble
     shield: moNa2_R rgbled_adapter
+    extra_cmake_args: ""
   - board: xiao_ble
     shield: moNa2_L rgbled_adapter
+    extra_cmake_args: ""
   - board: xiao_ble
     shield: settings_reset
+    extra_cmake_args: ""
