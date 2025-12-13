@@ -24,3 +24,5 @@ include:
     shield: moNa2_L rgbled_adapter
   - board: xiao_ble
     shield: settings_reset
+
+cmake-args: "-DZMK_CONFIG=${GITHUB_WORKSPACE}/config"
